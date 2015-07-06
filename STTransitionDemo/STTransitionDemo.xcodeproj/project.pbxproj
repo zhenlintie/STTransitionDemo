@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C3D7B331B4A2E0A0021C584 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D7B321B4A2E0A0021C584 /* PushedViewController.m */; };
+		9C3D7B361B4A31D80021C584 /* STDirectionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D7B351B4A31D80021C584 /* STDirectionAnimation.m */; };
+		9C3D7B391B4A40440021C584 /* STSwipeInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D7B381B4A40440021C584 /* STSwipeInteraction.m */; };
+		9C3D7B3C1B4A57530021C584 /* STScaleZoomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D7B3B1B4A57530021C584 /* STScaleZoomAnimation.m */; };
+		9CCFB9621B4A20F600BD17D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB9611B4A20F600BD17D2 /* main.m */; };
+		9CCFB9651B4A20F600BD17D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB9641B4A20F600BD17D2 /* AppDelegate.m */; };
+		9CCFB96B1B4A20F600BD17D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCFB9691B4A20F600BD17D2 /* Main.storyboard */; };
+		9CCFB96D1B4A20F600BD17D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CCFB96C1B4A20F600BD17D2 /* Images.xcassets */; };
+		9CCFB9701B4A20F600BD17D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCFB96E1B4A20F600BD17D2 /* LaunchScreen.xib */; };
+		9CCFB97C1B4A20F600BD17D2 /* STTransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB97B1B4A20F600BD17D2 /* STTransitionDemoTests.m */; };
+		9CCFB9941B4A21A700BD17D2 /* STAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB9881B4A21A700BD17D2 /* STAnimatedTransitioning.m */; };
+		9CCFB9971B4A21A700BD17D2 /* STInteractiveTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB98F1B4A21A700BD17D2 /* STInteractiveTransitioning.m */; };
+		9CCFB9981B4A21A700BD17D2 /* STTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB9921B4A21A700BD17D2 /* STTransition.m */; };
+		9CCFB99C1B4A22BA00BD17D2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB99B1B4A22BA00BD17D2 /* RootViewController.m */; };
+		9CCFB9A01B4A247300BD17D2 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFB99F1B4A247300BD17D2 /* ModalViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CCFB9761B4A20F600BD17D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CCFB9541B4A20F600BD17D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CCFB95B1B4A20F600BD17D2;
+			remoteInfo = STTransitionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C3D7B311B4A2E0A0021C584 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushedViewController.h; path = controllers/PushedViewController.h; sourceTree = "<group>"; };
+		9C3D7B321B4A2E0A0021C584 /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushedViewController.m; path = controllers/PushedViewController.m; sourceTree = "<group>"; };
+		9C3D7B341B4A31D80021C584 /* STDirectionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDirectionAnimation.h; sourceTree = "<group>"; };
+		9C3D7B351B4A31D80021C584 /* STDirectionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDirectionAnimation.m; sourceTree = "<group>"; };
+		9C3D7B371B4A40440021C584 /* STSwipeInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSwipeInteraction.h; sourceTree = "<group>"; };
+		9C3D7B381B4A40440021C584 /* STSwipeInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSwipeInteraction.m; sourceTree = "<group>"; };
+		9C3D7B3A1B4A57530021C584 /* STScaleZoomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScaleZoomAnimation.h; sourceTree = "<group>"; };
+		9C3D7B3B1B4A57530021C584 /* STScaleZoomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScaleZoomAnimation.m; sourceTree = "<group>"; };
+		9CCFB95C1B4A20F600BD17D2 /* STTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCFB9601B4A20F600BD17D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCFB9611B4A20F600BD17D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CCFB9631B4A20F600BD17D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CCFB9641B4A20F600BD17D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CCFB96A1B4A20F600BD17D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CCFB96C1B4A20F600BD17D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CCFB96F1B4A20F600BD17D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9CCFB9751B4A20F600BD17D2 /* STTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCFB97A1B4A20F600BD17D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCFB97B1B4A20F600BD17D2 /* STTransitionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTransitionDemoTests.m; sourceTree = "<group>"; };
+		9CCFB9871B4A21A700BD17D2 /* STAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimatedTransitioning.h; sourceTree = "<group>"; };
+		9CCFB9881B4A21A700BD17D2 /* STAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimatedTransitioning.m; sourceTree = "<group>"; };
+		9CCFB98E1B4A21A700BD17D2 /* STInteractiveTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STInteractiveTransitioning.h; sourceTree = "<group>"; };
+		9CCFB98F1B4A21A700BD17D2 /* STInteractiveTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STInteractiveTransitioning.m; sourceTree = "<group>"; };
+		9CCFB9901B4A21A700BD17D2 /* STMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMacros.h; sourceTree = "<group>"; };
+		9CCFB9911B4A21A700BD17D2 /* STTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTransition.h; sourceTree = "<group>"; };
+		9CCFB9921B4A21A700BD17D2 /* STTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTransition.m; sourceTree = "<group>"; };
+		9CCFB9931B4A21A700BD17D2 /* STTransitionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTransitionKit.h; sourceTree = "<group>"; };
+		9CCFB99A1B4A22BA00BD17D2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = controllers/RootViewController.h; sourceTree = "<group>"; };
+		9CCFB99B1B4A22BA00BD17D2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = controllers/RootViewController.m; sourceTree = "<group>"; };
+		9CCFB99E1B4A247300BD17D2 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalViewController.h; path = controllers/ModalViewController.h; sourceTree = "<group>"; };
+		9CCFB99F1B4A247300BD17D2 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalViewController.m; path = controllers/ModalViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CCFB9591B4A20F600BD17D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCFB9721B4A20F600BD17D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CCFB9531B4A20F600BD17D2 = {
+			isa = PBXGroup;
+			children = (
+				9CCFB9851B4A21A700BD17D2 /* STTransition */,
+				9CCFB95E1B4A20F600BD17D2 /* STTransitionDemo */,
+				9CCFB9781B4A20F600BD17D2 /* STTransitionDemoTests */,
+				9CCFB95D1B4A20F600BD17D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CCFB95D1B4A20F600BD17D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB95C1B4A20F600BD17D2 /* STTransitionDemo.app */,
+				9CCFB9751B4A20F600BD17D2 /* STTransitionDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CCFB95E1B4A20F600BD17D2 /* STTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB9991B4A226100BD17D2 /* controllers */,
+				9CCFB9631B4A20F600BD17D2 /* AppDelegate.h */,
+				9CCFB9641B4A20F600BD17D2 /* AppDelegate.m */,
+				9CCFB9691B4A20F600BD17D2 /* Main.storyboard */,
+				9CCFB95F1B4A20F600BD17D2 /* Supporting Files */,
+			);
+			path = STTransitionDemo;
+			sourceTree = "<group>";
+		};
+		9CCFB95F1B4A20F600BD17D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB96C1B4A20F600BD17D2 /* Images.xcassets */,
+				9CCFB96E1B4A20F600BD17D2 /* LaunchScreen.xib */,
+				9CCFB9601B4A20F600BD17D2 /* Info.plist */,
+				9CCFB9611B4A20F600BD17D2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CCFB9781B4A20F600BD17D2 /* STTransitionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB97B1B4A20F600BD17D2 /* STTransitionDemoTests.m */,
+				9CCFB9791B4A20F600BD17D2 /* Supporting Files */,
+			);
+			path = STTransitionDemoTests;
+			sourceTree = "<group>";
+		};
+		9CCFB9791B4A20F600BD17D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB97A1B4A20F600BD17D2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CCFB9851B4A21A700BD17D2 /* STTransition */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB9861B4A21A700BD17D2 /* animation transition */,
+				9CCFB98B1B4A21A700BD17D2 /* interactive transition */,
+				9CCFB9911B4A21A700BD17D2 /* STTransition.h */,
+				9CCFB9921B4A21A700BD17D2 /* STTransition.m */,
+				9CCFB9931B4A21A700BD17D2 /* STTransitionKit.h */,
+				9CCFB9901B4A21A700BD17D2 /* STMacros.h */,
+			);
+			path = STTransition;
+			sourceTree = "<group>";
+		};
+		9CCFB9861B4A21A700BD17D2 /* animation transition */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB9871B4A21A700BD17D2 /* STAnimatedTransitioning.h */,
+				9CCFB9881B4A21A700BD17D2 /* STAnimatedTransitioning.m */,
+				9C3D7B341B4A31D80021C584 /* STDirectionAnimation.h */,
+				9C3D7B351B4A31D80021C584 /* STDirectionAnimation.m */,
+				9C3D7B3A1B4A57530021C584 /* STScaleZoomAnimation.h */,
+				9C3D7B3B1B4A57530021C584 /* STScaleZoomAnimation.m */,
+			);
+			path = "animation transition";
+			sourceTree = "<group>";
+		};
+		9CCFB98B1B4A21A700BD17D2 /* interactive transition */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB98E1B4A21A700BD17D2 /* STInteractiveTransitioning.h */,
+				9CCFB98F1B4A21A700BD17D2 /* STInteractiveTransitioning.m */,
+				9C3D7B371B4A40440021C584 /* STSwipeInteraction.h */,
+				9C3D7B381B4A40440021C584 /* STSwipeInteraction.m */,
+			);
+			path = "interactive transition";
+			sourceTree = "<group>";
+		};
+		9CCFB9991B4A226100BD17D2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFB99A1B4A22BA00BD17D2 /* RootViewController.h */,
+				9CCFB99B1B4A22BA00BD17D2 /* RootViewController.m */,
+				9CCFB99E1B4A247300BD17D2 /* ModalViewController.h */,
+				9CCFB99F1B4A247300BD17D2 /* ModalViewController.m */,
+				9C3D7B311B4A2E0A0021C584 /* PushedViewController.h */,
+				9C3D7B321B4A2E0A0021C584 /* PushedViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CCFB95B1B4A20F600BD17D2 /* STTransitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCFB97F1B4A20F600BD17D2 /* Build configuration list for PBXNativeTarget "STTransitionDemo" */;
+			buildPhases = (
+				9CCFB9581B4A20F600BD17D2 /* Sources */,
+				9CCFB9591B4A20F600BD17D2 /* Frameworks */,
+				9CCFB95A1B4A20F600BD17D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STTransitionDemo;
+			productName = STTransitionDemo;
+			productReference = 9CCFB95C1B4A20F600BD17D2 /* STTransitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CCFB9741B4A20F600BD17D2 /* STTransitionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCFB9821B4A20F600BD17D2 /* Build configuration list for PBXNativeTarget "STTransitionDemoTests" */;
+			buildPhases = (
+				9CCFB9711B4A20F600BD17D2 /* Sources */,
+				9CCFB9721B4A20F600BD17D2 /* Frameworks */,
+				9CCFB9731B4A20F600BD17D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CCFB9771B4A20F600BD17D2 /* PBXTargetDependency */,
+			);
+			name = STTransitionDemoTests;
+			productName = STTransitionDemoTests;
+			productReference = 9CCFB9751B4A20F600BD17D2 /* STTransitionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CCFB9541B4A20F600BD17D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = sTeven;
+				TargetAttributes = {
+					9CCFB95B1B4A20F600BD17D2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					9CCFB9741B4A20F600BD17D2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 9CCFB95B1B4A20F600BD17D2;
+					};
+				};
+			};
+			buildConfigurationList = 9CCFB9571B4A20F600BD17D2 /* Build configuration list for PBXProject "STTransitionDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CCFB9531B4A20F600BD17D2;
+			productRefGroup = 9CCFB95D1B4A20F600BD17D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CCFB95B1B4A20F600BD17D2 /* STTransitionDemo */,
+				9CCFB9741B4A20F600BD17D2 /* STTransitionDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CCFB95A1B4A20F600BD17D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCFB96B1B4A20F600BD17D2 /* Main.storyboard in Resources */,
+				9CCFB9701B4A20F600BD17D2 /* LaunchScreen.xib in Resources */,
+				9CCFB96D1B4A20F600BD17D2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCFB9731B4A20F600BD17D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CCFB9581B4A20F600BD17D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCFB9971B4A21A700BD17D2 /* STInteractiveTransitioning.m in Sources */,
+				9CCFB99C1B4A22BA00BD17D2 /* RootViewController.m in Sources */,
+				9CCFB9A01B4A247300BD17D2 /* ModalViewController.m in Sources */,
+				9CCFB9981B4A21A700BD17D2 /* STTransition.m in Sources */,
+				9C3D7B361B4A31D80021C584 /* STDirectionAnimation.m in Sources */,
+				9C3D7B3C1B4A57530021C584 /* STScaleZoomAnimation.m in Sources */,
+				9CCFB9651B4A20F600BD17D2 /* AppDelegate.m in Sources */,
+				9CCFB9621B4A20F600BD17D2 /* main.m in Sources */,
+				9CCFB9941B4A21A700BD17D2 /* STAnimatedTransitioning.m in Sources */,
+				9C3D7B331B4A2E0A0021C584 /* PushedViewController.m in Sources */,
+				9C3D7B391B4A40440021C584 /* STSwipeInteraction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCFB9711B4A20F600BD17D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCFB97C1B4A20F600BD17D2 /* STTransitionDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CCFB9771B4A20F600BD17D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CCFB95B1B4A20F600BD17D2 /* STTransitionDemo */;
+			targetProxy = 9CCFB9761B4A20F600BD17D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CCFB9691B4A20F600BD17D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CCFB96A1B4A20F600BD17D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CCFB96E1B4A20F600BD17D2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CCFB96F1B4A20F600BD17D2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CCFB97D1B4A20F600BD17D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CCFB97E1B4A20F600BD17D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CCFB9801B4A20F600BD17D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = STTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CCFB9811B4A20F600BD17D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = STTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CCFB9831B4A20F600BD17D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STTransitionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STTransitionDemo.app/STTransitionDemo";
+			};
+			name = Debug;
+		};
+		9CCFB9841B4A20F600BD17D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STTransitionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STTransitionDemo.app/STTransitionDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CCFB9571B4A20F600BD17D2 /* Build configuration list for PBXProject "STTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCFB97D1B4A20F600BD17D2 /* Debug */,
+				9CCFB97E1B4A20F600BD17D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCFB97F1B4A20F600BD17D2 /* Build configuration list for PBXNativeTarget "STTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCFB9801B4A20F600BD17D2 /* Debug */,
+				9CCFB9811B4A20F600BD17D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCFB9821B4A20F600BD17D2 /* Build configuration list for PBXNativeTarget "STTransitionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCFB9831B4A20F600BD17D2 /* Debug */,
+				9CCFB9841B4A20F600BD17D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CCFB9541B4A20F600BD17D2 /* Project object */;
+}
