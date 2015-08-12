@@ -52,7 +52,7 @@
     
     [UIView animateWithDuration:[self transitionDuration:self.context]
                           delay:0
-                        options:UIViewAnimationOptionCurveEaseInOut
+                        options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
                          self.fromView.transform = fromViewEndT;
                          self.toView.transform = CGAffineTransformIdentity;

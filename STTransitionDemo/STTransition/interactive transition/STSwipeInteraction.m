@@ -53,13 +53,35 @@
         }
         case UIGestureRecognizerStateEnded:
         case UIGestureRecognizerStateCancelled:{
-            if (progress > 0.43) {
-                [self finishInteractiveTransition];
+            if (self.onInteractiving){
+                CGPoint v = [gesture velocityInView:self.viewController.view.superview];
+                BOOL shouldFinished = NO;
+                CGFloat maxV = 500;
+                if (_reverse){
+                    if (_direction == STDirectionHorizontal){
+                        shouldFinished = v.x<-maxV;
+                    }
+                    else{
+                        shouldFinished = v.y<-maxV;
+                    }
+                }
+                else{
+                    if (_direction == STDirectionHorizontal){
+                        shouldFinished = v.x>maxV;
+                    }
+                    else{
+                        shouldFinished = v.y>maxV;
+                    }
+                }
+                
+                if (progress > 0.43 || shouldFinished) {
+                    [self finishInteractiveTransition];
+                }
+                else {
+                    [self cancelInteractiveTransition];
+                }
+                self.onInteractiving = NO;
             }
-            else {
-                [self cancelInteractiveTransition];
-            }
-            self.onInteractiving = NO;
             break;
         }
         default:
