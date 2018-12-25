@@ -16,7 +16,7 @@ STTransition一个视图控制器(`ViewController`)**转场动画**及**交互**
 ## 主要用法
 1. 替代`UIViewController`的`transitioningDelegate`
 
-	```
+```
 vc.transition = STTransitionMake(^(STTransition *instance) {
 			 // 动画
             instance.animationTransitioning = STScaleZoomAnimationMake(^(STScaleZoomAnimation *instance) {
@@ -31,12 +31,11 @@ vc.transition = STTransitionMake(^(STTransition *instance) {
          	   // 交互方向反转
             	instance.reverse = YES;
         	});
-        });
-	```
+```
 
 2. 替代`UINavigationController`的`delegate`
 
-	```
+```
 nav.navigationTransition = STTransitionMake(^(STTransition *instance) {
             instance.animationTransitioning = STDirectionAnimationMake(^(STDirectionAnimation *instance) {
                 // 纵向动画
@@ -49,7 +48,7 @@ nav.navigationTransition = STTransitionMake(^(STTransition *instance) {
         });
 
 	
-	```
+```
 	
 ## 截图
 ![](https://github.com/zhenlintie/STTransitionDemo/raw/master/screen.gif)
